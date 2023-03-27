@@ -17,17 +17,18 @@ class WatchScreen extends StatelessWidget {
             5.sh,
             Expanded(
               child: GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemCount: 4,
-                itemBuilder: (_, i) => Container(
-                  margin: const EdgeInsets.all(5),
-                  color: Colors.grey,
-                  child: const Center(child: Text('{sample[i]}')),
-                ),
-              ),
+                  padding: const EdgeInsets.all(0),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 10,
+                      childAspectRatio: 12 / 6,
+                      crossAxisSpacing: 1),
+                  itemCount: 17,
+                  physics: const BouncingScrollPhysics(),
+                  shrinkWrap: true,
+                  itemBuilder: (_, i) =>
+                      WatchScreenComponents().movieItem(name: 'Crime')),
             ),
-            WatchScreenComponents().movieItem(name: 'Crime'),
           ],
         ),
       )),

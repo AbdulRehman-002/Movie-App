@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.3
   provider: ^6.0.5
+  animated_bottom_navigation_bar: ^1.2.0
+  http: ^0.13.5
+  intl: ^0.18.0
+  video_player: ^2.6.0
+  chewie: ^1.4.0
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:

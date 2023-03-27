@@ -7,10 +7,10 @@ import '../../../utils/text_styles.dart';
 class WatchScreenComponents {
   Widget movieItem({required String name}) {
     return Container(
-      margin: const EdgeInsets.all(15),
+      margin: const EdgeInsets.symmetric(horizontal: 15),
       padding: const EdgeInsets.all(20),
       height: 100,
-      width: double.infinity,
+      width: 163,
       decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(10)),
           image: DecorationImage(
